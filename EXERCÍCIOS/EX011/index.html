@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinâmicas</title>
+</head>
+<body>
+    <h1>imagens flexíveis</h1>
+    <p>tente abrir essa página em vários dispositivos ou mexa no tamanho da sua tela</p>
+
+    <picture>
+        <source media="(max-width:800px)" srcset="Imagens/pequeno.jpg" type="image/jpg">
+        <source media="(max-width:1020px)" srcset="Imagens/media.jpg" type="image/jpg">
+        <img src="Imagens/grande.jpg" alt="imagem grande">
+    </picture>
+
+    <h1>Vamos aprender a tocar audio</h1>
+    <p>Para colocar um audio no seu site adicionamos a tag  audio e o parâmetro controls autoplay, tudo isso no body</p>
+    <audio src="audio/Little Umbrellas - TrackTribe.mp3" controls autoplay></audio>
+</body>
+</html>
