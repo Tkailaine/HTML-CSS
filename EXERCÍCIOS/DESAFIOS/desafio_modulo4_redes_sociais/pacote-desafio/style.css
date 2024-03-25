@@ -4,15 +4,18 @@
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    
 }
 
 html, body{
     height: 100vh;
     width: 100vw;
     background-color: black;
+    overflow: hidden;
 }
 
 body{
+    
     background-image: url(imagens/fundo-madeira.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -32,12 +35,51 @@ section#telefone{
     left: 50%;
     transform: translate(-50%,-40%);
 
-    height: 500px;
-    width: 248px;
+    height: 430px;
+    width: 213px;
     background-image: url(imagens/frame-iphone-ajustado.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    
-    
+}
 
+iframe#tela{
+    position: relative;
+    top: 55px;
+    left: 15px;
+    width: 184px;
+    height: 325px;
+    
+}
+
+section#botoes{
+    position: absolute;
+    left: 80%;
+    top: 5%;
+  
+    width: 100px;
+    height: 450px;
+    
+}
+
+section#botoes > a > img{
+    position: relative;
+    border-radius: 50%;
+    left: 25px;
+    padding-top: 5px;
+    margin: 10px;
+    width: 50px;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.144);
+    
+    
+    
+}
+
+section#botoes > a > img:active{
+    transform:scale(95%);
+    /*efeito de botão afundando*/
+}
+
+section#botoes > a > img:hover{
+   box-shadow: 0px 7px 7px 0px white;
+   transition: 0.3s;
 }
