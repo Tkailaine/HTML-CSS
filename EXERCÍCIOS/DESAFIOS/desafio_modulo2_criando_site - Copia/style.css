@@ -1,0 +1,237 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+  
+@font-face{
+    font-family: 'android';
+    src: url('fontes/idroid.otf') format(opentype);
+}
+
+
+@media only screen and (max-width: 768px) {
+    header > h1 {
+      font-size: 1.5em; /* Reduz o tamanho do título */
+    }
+
+    main ul{
+        columns: 1;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    header > h1 {
+      font-size: 1.2em; /* Reduz ainda mais o tamanho do título */
+    }
+
+    main ul{
+        columns: 1;
+    }
+  }
+
+@media only screen and (max-width: 320px) {
+    header > h1 {
+    font-size: 1em;
+    }
+
+    main ul{
+        columns: 1;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    main ul{
+        columns: 2;
+    }
+}
+/*
+CORES:
+
+#00E07B - VERDE PRINCIPAL
+#2E8B62 - VERDE ESCURO
+#1EB672 - VERDE MEIO TOM
+
+*/
+:root{
+    --fonte-android: 'android', cursive;
+    --fonte-padrao: 'Sagoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+
+    --cor1: #00E07B;
+    --cor2: #2E8B62;
+    --cor3: #1EB672;
+}
+*{
+    margin: 0px;
+    padding:0px;
+}
+
+
+body{
+    font-family: var(--fonte-padrao);
+    background-color: var(--cor1);
+    color: white;
+    margin: auto;
+    text-align: justify;
+    overflow-x: hidden ;
+
+}
+
+section{
+    margin: 0px 10px 0px 10px;
+}
+
+img{
+    width: 100%;
+}
+img.pequena{
+    max-width: 350px;
+    display: block;
+    margin:auto;
+}
+
+div.video{
+    background-color: var(--cor2);
+    margin: 0px -10px 30px -10px;
+    padding: 30px;
+    padding-bottom: 50%;
+    position: relative;
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+}
+h1{
+    font-family: var(--fonte-destaque);
+    font-size: 2em;
+    margin: 10px;
+    font-weight: normal;
+    text-align: left;
+}
+
+h2{
+    font-family: var(--fonte-android);
+    background-image: linear-gradient(to right,#00e07bb2 20%, transparent);
+    border-radius: 5px;
+    margin: 20px;
+    padding: 5px;
+    font-weight: normal;
+    text-align: left;
+}
+h3{
+    font-family: var(--fonte-padrao);
+    background-color: #228522;
+    color: white;
+    text-indent: 10px;
+    padding: 5px;
+    
+}
+
+main p{
+    margin: 15px;
+    text-indent: 30px;
+    line-height: 2em;
+    font-size: 1em;
+    text-align: justify;
+
+}
+
+header{
+    background-image: linear-gradient(45deg,#2e8b63da 20%, #00E07B);
+    text-align: center;
+    padding: 20px;
+        
+}
+
+header > h1{
+    margin: 0px;
+    text-align: center;
+    
+    
+}
+
+header > p{
+  width: 500px;
+  max-width: 70%;
+  margin: auto;
+}
+
+header> nav{
+    text-align: left;
+    padding: 40px 0px 5px 0px
+    
+    
+}
+
+header > nav > a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition-duration: 0.5s;
+   
+}
+
+header > nav > a:hover{
+    color: green;
+    background-color:white ; 
+}
+
+main > section{
+    background-color: white;
+    color: black;
+    min-width: 200px;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 0px 0px 15px 15px;
+    box-shadow: 0px 12px 12px 5px rgba(0, 0, 0, 0.295)
+    
+}
+
+
+main > section > article > section.aprender_mais{
+   background-color: #89f789de;
+   border-radius: 15px;
+   margin: 20px;
+   box-shadow: 0px 5px 8px 5px rgba(0, 0, 0, 0.144);
+   
+
+}
+
+main aside{
+    padding: 0px 10px;
+
+}
+main aside h3{    
+    background-image: linear-gradient(to right,#00e07bb2 20%, transparent);
+    margin: 0px -10px 0px -10px;
+    border-radius: 15px 15px 0px 0px;
+
+    
+    
+ }
+
+
+
+ main ul{    
+    list-style-position: inside;
+    margin: 20px;
+    text-align: left;
+  
+    
+    
+ }
+footer{
+    background-color: var(--cor2);
+    text-align: center;
+    font-style: italic;
+}
+footer > p{
+    margin-top: 20px ;
+    margin-bottom: auto;
+}
+
+

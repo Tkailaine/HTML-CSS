@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando iframes</title>
+    <style>
+        body{
+            margin: auto;
+            text-align: center;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        iframe{
+            width: 700px;
+            height: 400px;
+            background-color: rgb(167, 185, 243);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste Iframes</h1>
+    <h2>
+        Faça uma escolha
+    </h2>
+    <ul>
+        <a href="pag001.html" target="frame">opção 1</a>
+        <a href="pag002.html" target="frame">opção 2</a>
+        <a href="pag003.html" target="frame">opção 3</a>
+    </ul>
+
+    <iframe srcdoc="<h1>Escolha uma opção acima</h1>" frameborder="0" name="frame">
+        <p>Infelizmente o seu navegador não é compatível, <a href="pag001.html">clique aqui</a></p>
+    </iframe>
+
+    <h1>Colocando mapas com iframe</h1>
+    <iframe src="https://embed.waze.com/iframe?zoom=16&lat=-23.430077&lon=-46.468024&ct=livemap" width="600" height="450" allowfullscreen></iframe>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.838164363255!2d-46.474246025427405!3d-23.430212556785644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce8af96f722a25%3A0x8071626c51a7154a!2sAeroporto%20Internacional%20de%20Guarulhos!5e0!3m2!1spt-BR!2sbr!4v1711063960939!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</body>
+</html>
