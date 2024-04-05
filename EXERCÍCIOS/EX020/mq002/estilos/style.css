@@ -1,0 +1,18 @@
+*{
+    margin: 0px;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    background-color: rgb(57, 57, 255);
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+h1{
+    padding: 20px;
+}
