@@ -16,7 +16,7 @@ html, body{
 
 body{
     
-    background-image: url(imagens/fundo-madeira.jpg);
+    background-image: url(imagens/fundo-white.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -29,8 +29,18 @@ main{
 
 }
 
-section#telefone{
+section#areamesa{
     position: absolute;
+    top: 10vh;
+    width: 100vw;
+    height: 90vh;
+    background-image: url(imagens/mesa-madeira.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+section#telefone{
+    position: relative;
     top: 40%;
     left: 50%;
     transform: translate(-50%,-40%);
