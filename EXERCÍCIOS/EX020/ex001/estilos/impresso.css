@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+/* ESTILO PARA IMPRESSÃO NA IMPRESSORA */
+*{
+    margin: 10px;
+    padding: 10px;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+header{
+    text-align: center;
+}
+
+nav{
+    display: none;
+}
+
+article{
+    width: 100%;
+    text-align: justify;
+    text-indent: 20px;
+
+}
+
+article::after{
+    content: '*Esse artigo foi impresso através do site www.xxxx.com'
+}
