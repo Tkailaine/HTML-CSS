@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+header > h1 {font-size: 3em; /* Reduz o tamanho do título */}
+
+main ul{columns: 2;}
+
+#imenu{display: none;}
+
+#itens{display: inline-block;}
+
+nav{
+    font-size: 1.4em;
+    font-weight: lighter;
+  }
+
+header > nav > ul > li{
+  display: inline;
+  border-top:none;
+  padding: 10px;
+}

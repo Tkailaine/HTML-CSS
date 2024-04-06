@@ -4,24 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curiosidade de Tecnologia</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./estilos/style.css" media="all">
+    <link rel="stylesheet" href="./estilos/telasmuitopequenas.css" media="screen and (max-width:320px)">
+    <link rel="stylesheet" href="./estilos/tablet.css" media="screen and (min-width:600px) and (max-width:768px)">
+    <link rel="stylesheet" href="./estilos/desktop.css" media="screen and (min-width:768px) and (max-width:1024px)">
+    <link rel="stylesheet" href="./estilos/tv.css" media="screen and (min-width:1024px)">
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    
 </head>
 <body>
     <header>
         <h1>CURIOSIDADES DE TECNOLOGIA</h1>
-        <p>Tudo aquilo que você sempre quis saber sobre o mundo Tech, em um único lugar<p>
+        <p>Tudo aquilo que você sempre quis saber sobre o mundo Tech,<br>em um único lugar<p>
         <nav>
-            <a href="">Home</a>
-            <a href="">Notícias</a>
-            <a href="">Fale Conosco</a>
+            <span id="imenu" class="material-symbols-outlined" onclick="abrir()">
+                menu
+                </span>
+            <ul id="itens">
+                <li><a href="">Home</a>
+                <li><a href="">Notícias</a>
+                <li><a href="">Fale Conosco</a>
+            </ul>
         </nav>
 
     </header>
     
     <main>
         <section>
-            
+     
             <article>
                 <h1>HISTÓRIA DO MASCOTE DO ANDROID</h1>
                 <p>Provavelmente você sabe que o sistema operacional Android, mantido pelo Google é um dos mais utilizados para dispositivos móveis em todo o mundo. Mas tavez você não saiba que o seu simpático mascote tem um nome e uma história muito curiosa? Pois acompanhe esse artigo para aprender muita coisa sobre esse robozinho.</p>
@@ -72,6 +83,17 @@
                     <p>Então é isso! Espero que você tenha gostado do nosso artigo com essa curiosidade sobre o sistema Android e seu simpático mascote.</p>
             </article>
         </section>
+
+        <script>
+            function abrir(){
+                var item = document.getElementById("itens")
+                if(item.style.display=='block'){
+                    item.style.display='none';
+                }else{
+                    item.style.display='block';
+                }
+            }
+        </script>
         
     </main>
 
