@@ -15,6 +15,7 @@ CORES:
 #1EB672 - VERDE MEIO TOM
 
 */
+
 :root{
     --fonte-android: 'android', cursive;
     --fonte-padrao: 'Sagoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -36,47 +37,56 @@ body{
     color: white;
     text-align: justify;
     overflow-x: hidden ;
-
 }
 
 header{
     background-image: linear-gradient(45deg,#2e8b63da 20%, #00E07B);
     text-align: center;
-    padding: 20px;
-        
+    padding: 20px 0px 0px 0px;      
 }
 
 header > h1{
     font-size: 1.8em;
-    text-align: center;
-    
-    
+    text-align: center; 
 }
 
 header > p{
   width: 100vw;
   max-width: 90vw;
-  margin: auto
+  margin: auto;
 }
 
 header> nav{
     text-align: left;
-    padding: 40px 0px 5px 0px
-    
-    
+    padding: 40px 0px 5px 0px; 
 }
 
-header > nav > a{
+#imenu{
+    display: block;
+    width: 100vw;
+    text-align: center;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+
+#itens{display: none;}
+
+header > nav > ul > li{
+    width: 100vw;
+    border-top:4px solid  #17945c;
+    list-style-type: none;
+    line-height: 50px;
+    text-align: center;
+}
+
+header > nav > ul > li> a{
     color: white;
     text-decoration: none;
-    padding: 10px;
-    transition-duration: 0.5s;
-   
 }
 
-header > nav > a:hover{
-    color: green;
-    background-color:white ; 
+header > nav > ul> li:hover{
+    background-color:var(--cor1) ; 
+    transition-duration: 0.5s;
 }
 
 main{ font-size: 1em;}
@@ -86,7 +96,6 @@ main p{
     text-indent: 30px;
     line-height: 2em;
     text-align: justify;
-
 }
 
 main > section{
@@ -96,7 +105,7 @@ main > section{
     margin: auto;
     padding: 40px;
     border-radius: 0px 0px 15px 15px;
-    box-shadow: 0px 12px 12px 5px rgba(0, 0, 0, 0.295)
+    box-shadow: 0px 12px 12px 5px rgba(0, 0, 0, 0.295);
     
 }
 
@@ -122,12 +131,10 @@ h3{
     color: white;
     text-indent: 10px;
     padding: 5px;
-    
 }
 
-img{
-    width: 100%;
-}
+img{width: 100%;}
+
 img.pequena{
     max-width: 350px;
     display: block;
@@ -159,15 +166,12 @@ main > section > article > section.aprender_mais{
 
 }
 
-main aside{
-    padding: 0px 10px 10px 10px;
+main aside{padding: 0px 10px 10px 10px;}
 
-}
 main aside h3{    
     background-image: linear-gradient(to right,#00e07bb2 20%, transparent);
     margin: 0px -10px 0px -10px;
-    border-radius: 15px 15px 0px 0px;
-    
+    border-radius: 15px 15px 0px 0px; 
  }
 
  main ul{    
@@ -175,16 +179,14 @@ main aside h3{
     margin: 20px;
     text-align: left;
     columns: 1;
-   
  }
-
-
 
 footer{
     background-color: var(--cor2);
     text-align: center;
     font-style: italic;
 }
+
 footer > p{
     margin-top: 20px ;
     margin-bottom: auto;

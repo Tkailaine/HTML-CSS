@@ -1,8 +1,19 @@
 @charset "UTF-8";
-header > h1 {
-    font-size: 2.5em; /* Reduz o tamanho do título */
+header > h1 {font-size: 2.5em; /* Reduz o tamanho do título */}
+
+main ul{columns: 2;}
+
+#imenu{display: none;}
+
+#itens{display: inline-block;}
+
+nav{
+    font-size: 1.3em;
+    font-weight: lighter;
   }
 
-  main ul{
-      columns: 2;
-  }
+header > nav > ul > li{
+  display: inline;
+  border-top:none;
+  padding: 10px;
+}

@@ -1,13 +1,21 @@
 @charset "UTF-8";
-header > h1 {
-    font-size: 2em; /*aumenta o tamanho do título */
-  }
+header > h1 {font-size: 2em; /*aumenta o tamanho do título */}
 
-  main ul{
-      columns: 2;
-  }
+main ul{columns: 2;}
 
-  header > p{
-    width: 100vw;
-    margin: auto;
-  }
+#imenu{display: none;}
+
+#itens{display: inline-block;}
+
+nav{
+  font-size: 1.2em;
+  font-weight: lighter;
+}
+
+header > nav > ul > li{
+  display: inline;
+  border-top:none;
+  padding: 10px;
+}
+
+
