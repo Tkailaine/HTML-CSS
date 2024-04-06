@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+main{
+    border: 2px solid rgb(75, 74, 74);
+}
+
+#celular{display:none;}
+#tablet{display:none;}
+#impressora{display: block;}
+#pc{display: none;}
+#televisao{display:none;}
