@@ -1,0 +1,13 @@
+@charset "UTF-8";
+header > h1 {
+    font-size: 2em; /*aumenta o tamanho do título */
+  }
+
+  main ul{
+      columns: 2;
+  }
+
+  header > p{
+    width: 100vw;
+    margin: auto;
+  }
