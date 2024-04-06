@@ -1,0 +1,43 @@
+@charset "UTF-8";
+header > h1{
+    font-size: 1.2em;
+    text-align: center; 
+}
+
+header > p{
+    width: 100vw;
+    max-width: 70vw;
+    margin: auto;
+   
+  }
+main{ width: 100vw;
+font-size: 13px;}
+main p{
+    margin: 8px 0px;
+    text-indent: 15px;
+    line-height: 2em;
+    text-align: justify;
+}
+
+main > section{
+    padding: 30px 30px 30px 15px;
+    
+    
+}
+
+h1{font-size: 1.8em;}
+
+h2{font-size: 1.3em;}
+
+h3{font-size: 1.0em;}
+
+main > section > article > section.aprender_mais{
+    margin: 10px;
+    width: 170px;
+ }
+ main ul{    
+    list-style-position: inside;
+    margin: 10px;
+    text-align: left;
+    columns: 1;
+ }
